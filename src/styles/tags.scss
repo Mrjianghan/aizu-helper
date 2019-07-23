@@ -1,0 +1,125 @@
+.tags-breadcrumb {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 50px;
+}
+
+.tags-breadcrumb-list {
+  padding: 0 15px;
+}
+
+.tag-collapse {
+  font-size: 36px !important;
+}
+
+.tag-collapse.tag-collapse_right {
+  transform: rotate(90deg);
+}
+
+.tags-container {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+  .tags-box {
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 106px;
+    width: 100%;
+    height: 36px;
+    background: #fff;
+  }
+  .tags-list {
+    position: absolute;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    height: 36px;
+    overflow: visible;
+    white-space: nowrap;
+    transition: left .3s ease;
+  }
+  .tag-item-icon {
+    color: #eee;
+    font-size: 11px !important;
+  }
+  .tag-item {
+    position: relative;
+    display: inline-block;
+    height: 36px;
+      width: 166px;
+      text-align: center;
+      color: #21223f;
+      box-sizing: border-box;
+    line-height: 36px;
+    margin: 0px 4px 0px 0;
+    padding: 0 10px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    background-color: #fff;
+    font-size: 12px;
+    vertical-align: middle;
+    opacity: 1;
+    overflow: hidden;
+    cursor: pointer;
+    &.is-active {
+      .tag-item-icon {
+        color: $mainBg;
+      }
+       .tag-text {
+        color: #6479ff;
+      } 
+        .tag-close {
+            color: #6479ff;
+        }
+        
+      border-color : #eff1ff;
+        background-color: #eff1ff;
+    }
+  }
+  .tag-text {
+    margin-left: 8px;
+  }
+  .tag-close {
+    margin-left: 8px;
+      color: #d9dae3;
+  }
+  .tag-item:hover {
+    opacity: .85;
+  }
+  .tags-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 96%;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: -3px 0 15px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.contextmenu {
+  margin: 0;
+  background: #fff;
+  top: 64px;
+  list-style-type: none;
+  padding: 5px 0;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.3);
+  li {
+    margin: 0;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 15px;
+    cursor: pointer;
+    &:hover {
+      background: #eee;
+    }
+  }
+}
